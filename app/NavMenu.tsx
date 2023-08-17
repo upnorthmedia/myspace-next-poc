@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { SignInButton } from "@/components/buttons";
 
 export default function NavMenu() {
   return (
@@ -18,8 +18,11 @@ export default function NavMenu() {
       <a href="/users" className="block mt-4 font-semibold lg:inline-block lg:mt-0 text-white hover:text-white">
         Users
       </a>
+      </div>
+      <div className="grid justify-items-end">
+        <SignInButton />
     </div>
-  </div>
+    </div>
 </nav>
   );
 }
