@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import NavMenu from './NavMenu'
 import AuthProvider from './AuthProvider'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -19,9 +20,16 @@ export default function RootLayout({
   return (
     <AuthProvider>
     <html lang="en">
-      <body className="">
-      <NavMenu />
-        {children}</body>
+      <body className="mx-auto">
+        <NavMenu />
+        <div className="mx-auto pt-10">
+        <div className="mx-auto lg:grid lg:w-full overflow-visible lg:max-w-7xl">
+    <div className="lg:pr-4">
+      <div className="lg:max-w-xlg"></div>
+         {children}
+         </div>
+         </div></div>
+        </body>
     </html>
     </AuthProvider>
   )
