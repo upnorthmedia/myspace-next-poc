@@ -9,25 +9,26 @@ export function SignInButton() {
   console.log(session, status);
 
   if (status === 'loading') {
-    return <>...</> ;
+    return <div className="flex flex-wrap items-center mb-6 text-xs font-medium text-gray-300 sm:mb-0 dark:text-gray-300">Signing In...</div> ;
   }
 
   if (status === 'authenticated') {
     return (
       <Link href={`/dashboard`}>
         <Image
-          src={session.user?.image ?? '/mememan.webp'}
+          className="w-7 h-7 rounded" 
+          src={session.user?.image ?? '/mememan.webp'} 
+          alt="user"
           width={32}
           height={32}
-          alt="Your Name"
-        />
+          />
       </Link>
     );
   }
 
-  return <button onClick={() => signIn()}>Sign in</button>;
+  return <button className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-300 sm:mb-0 dark:text-gray-300" onClick={() => signIn()}>Sign in</button>;
 }
 
 export function SignOutButton() {
-  return <button onClick={() => signOut()}>Sign out</button>;
+  return <button className="flex flex-wrap items-center mb-6 text-xs font-medium text-gray-300 sm:mb-0 dark:text-gray-300" onClick={() => signOut()}>Sign out</button>;
 }

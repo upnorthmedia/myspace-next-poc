@@ -22,8 +22,7 @@ export default async function Dashboard() {
 
   return (
     <>
-      <h1>Dashboard</h1>
-      <SignOutButton />
+      <h1 className="text-xl font-bold pb-4">Dashboard</h1>
       <ProfileForm user={user} />
     </>
   );

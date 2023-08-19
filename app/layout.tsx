@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import NavMenu from './NavMenu'
 import AuthProvider from './AuthProvider'
-
+import Footer from './Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,15 +20,16 @@ export default function RootLayout({
   return (
     <AuthProvider>
     <html lang="en">
-      <body className="mx-auto">
+      <body className="mx-auto h-screen justify-between">
         <NavMenu />
-        <div className="mx-auto pt-10">
-        <div className="mx-auto lg:grid lg:w-full overflow-visible lg:max-w-7xl">
+        <div className="pt-10">
+        <div className="container flex mx-auto">
     <div className="lg:pr-4">
-      <div className="lg:max-w-xlg"></div>
+      <div className="lg:max-w-xlg h-screen">
          {children}
-         </div>
          </div></div>
+         </div></div>
+         <Footer />
         </body>
     </html>
     </AuthProvider>
