@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Card } from 'flowbite-react';
 import dayjs from "dayjs";
 
 interface Props {

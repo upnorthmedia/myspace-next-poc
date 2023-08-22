@@ -6,8 +6,8 @@ export default function NavMenu() {
   return (
     <nav className="flex bg-gray-800">
     <div className="container flex items-center mx-auto justify-between py-6">
-    <a href="/" className="flex items-center mb-4 mr-6 sm:mb-0 font-extrabold bg-indigo-200 rounded-md px-1">
-                        <img src="/logo.svg" className="p-1 h-8" alt="Logo" />
+    <a href="/" className="flex items-center mb-4 mr-6 sm:mb-0 font-extrabold ">
+                        <img src="/logo.svg" className="h-8" alt="Logo" />
                         
                     </a>
   <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
@@ -15,7 +15,7 @@ export default function NavMenu() {
       <a href="/files" className="mr-4 hover:text-white md:mr-6">
         Files
       </a>
-      <a href="/blog" className="mr-4 hover:text-white md:mr-6">
+      <a href="/guides" className="mr-4 hover:text-white md:mr-6">
         Guides
       </a>
       <a href="/users" className="mr-4 hover:text-white md:mr-6">

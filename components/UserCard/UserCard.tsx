@@ -9,10 +9,7 @@ interface Props {
 
 export default function UserCard({ id, name, age, image}: Props) {
     return (
-        <div className="mx-auto pt-10">
-  <div className="mx-auto lg:grid lg:w-full lg:max-w-7xl">
-    <div className="lg:pr-4">
-      <div className="lg:max-w-xlg"></div>
+   
         <div className="grid grid-cols-4 gap-4 ">
             <div className="w-80">
             <img
@@ -27,6 +24,6 @@ export default function UserCard({ id, name, age, image}: Props) {
                 </h3>
                 </div>
             </div>
-        </div></div></div></div>
+        </div>
     );
 }
